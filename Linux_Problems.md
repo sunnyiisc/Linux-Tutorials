@@ -1,0 +1,28 @@
+$$$$$List of Problems occured in linux and their solutions
+$$Prepared by Supantha Sen$$
+
+*1**********
+pci error when starting linux:
+
+add pci=noaer to kernel command line:
+- edit the file at /etc/default/grub and add pci=noaer to the line- GRUB_CMDLINE_LINUX_DEFAULT. as " GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer"
+- run "sudo update-grub"
+- reboot the system to fix the issue.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*2**********
+Time error between windows and Linux dual boot:
+
+This is because linux use UTC time of the hardware clock whereas windows use the local time, this gives rise to the conflict.
+Hence, we can force linus to use the local time to remove the conflict.
+To check time details about the time storeed in the hardware clock use the following command 
+>timedatectl
+RTC in local TZ: is set to No, then change it to yes by the following command
+>timedatectl set-local-rtc 1 --adjust-system-clock
+To revert back use
+>timedatectl set-local-rtc 0 --adjust-system-clock
+______________________________________________________________________________________________________________________________
+
+
+*3**********
