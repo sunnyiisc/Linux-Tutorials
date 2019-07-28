@@ -1,3 +1,5 @@
 ******************************
 >Install Yakuake (drop down terminal application)-----add to autostart in system setting
 >Install Vim editor
+>Correct the time (if doing dual boot with windows) - as stated in Linux_Problem file
+>
