@@ -21,11 +21,11 @@ For more information: https://in.mathworks.com/matlabcentral/answers/399207-matl
 Creating Shortcut after installation:
 -------------------------------------
 Step-1:
-    Goto bin-
+    Goto bin:
     cd /usr/local/bin
     
 Step-2:
-    creating link of the original file here-
+    creating link of the original file here:
     sudo ln -s <address of original file (eg:/MATLAB/R2018b/bin/matlab)> matlab
     //this will make youo call "matlab" in terminal from anywhere to open matab
     // example: sudo ln -s /run/media/sunny-iisc/Extras/0-LINUX/Softwares/MATLAB/R2018b/bin/matlab matlab
