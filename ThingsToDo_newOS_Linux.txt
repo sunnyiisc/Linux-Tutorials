@@ -2,4 +2,9 @@
 >Install Yakuake (drop down terminal application)-----add to autostart in system setting
 >Install Vim editor
 >Correct the time (if doing dual boot with windows) - as stated in Linux_Problem file
+>Automount the drives:
+	for ubuntu: 
+		>check the deive by "sudo fdisk -l"
+		>check the uuid of the drive by "sudo blkid"
+		>add the lines by replicating the alrready written lines in the file "/etc/fstab"
 >
