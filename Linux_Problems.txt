@@ -8,7 +8,7 @@ add pci=noaer to kernel command line:
 - edit the file at /etc/default/grub and add pci=noaer to the line- GRUB_CMDLINE_LINUX_DEFAULT. as " GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer"
 - run "sudo update-grub"
 - reboot the system to fix the issue.
----------------------------------------------------------------------------------------------------------------------------------------------------------
+______________________________________________________________________________________________________________________________
 
 
 *2**********
