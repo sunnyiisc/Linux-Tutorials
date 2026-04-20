@@ -26,4 +26,16 @@ ________________________________________________________________________________
 
 
 *3**********
-supantha sen
+Windows Partition files as Read-Only to convert to Read Write Options
+
+This is the issue that the disk is still used by windows or due to the ntfs formatting that is stoppig linux to access it.
+Make sure that windows is properly shut down before performing the following steps.
+Find out which partition is windows use any of the following commands:
+>> lsblk
+>> fdisk -l 
+>> df -h
+Unmount the Partition (Eg: /dev/sda3)
+>> sudo umount /dev/sda3
+Mount the drive again with read write access:
+>> mount -v -t ntfs-3g -o rw /dev/sda3 /windows
+The windows partition is mounted at /windows and can be used to read write.
